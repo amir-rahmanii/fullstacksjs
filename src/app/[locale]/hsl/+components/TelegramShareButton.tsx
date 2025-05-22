@@ -31,7 +31,13 @@ export default function TelegramShareButton({
 }: TelegramShareButtonProps) {
   const shareText = getShareTextByProgress(score, total);
   return (
-    <Button asChild size="md" type="button" variant="contained">
+    <Button
+      asChild
+      size="md"
+      className="cursor-pointer"
+      type="button"
+      variant="contained"
+    >
       <a
         href={`https://t.me/share/url?url=${encodeURIComponent('https://fullstacksjs.com/en/hsl')}&text=${encodeURIComponent(shareText)}`}
         rel="noopener noreferrer"

@@ -50,7 +50,12 @@ export default function ColorsGrid({ colors }: { colors: ColorQuestion[] }) {
             total={colors.length}
           />
         )}
-        <Button size="md" variant="outline" onClick={handleTryAgain}>
+        <Button
+          size="md"
+          className="cursor-pointer"
+          variant="outline"
+          onClick={handleTryAgain}
+        >
           {gameOver ? t('tryAgain') : t('reset')}
         </Button>
       </div>
